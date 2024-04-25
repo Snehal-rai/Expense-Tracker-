@@ -1,0 +1,109 @@
+/* General body and app styling */
+body {
+  background-image: url('https://cur.glitter-graphics.net/pub/3754/3754078fzgix66qck.gif');
+  background-size: 100% 100%; /* Adjust this value to suit your needs */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; /* Ensures the image is centered */
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+
+.App {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  color: #333; /* Ensures text is readable on light backgrounds */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.left-column, .right-column {
+  flex: 1;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds subtle shadow for depth */
+}
+
+.left-column {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for form area */
+}
+
+.right-column {
+  background-color: rgba(242, 242, 242, 0.9); /* Slightly different background for contrast, semi-transparent */
+}
+
+.input-wrapper {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input, select {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #5c67f2; /* Attractive color for buttons */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4a54e1; /* Darken button on hover for interaction feedback */
+}
+
+/* Styling for the expense list */
+.expense-list-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd; /* Light border for table cells */
+  background-color: #fafafa; /* Light background for table cells */
+}
+
+th {
+  background-color: #eee; /* Light gray background for table headers */
+  text-align: left;
+}
+.app-header {
+  background-color: #4a54f1;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.app-footer {
+  background-color: #4a54f1;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
